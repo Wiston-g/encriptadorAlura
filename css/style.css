@@ -1,0 +1,70 @@
+body{
+ background-color: #E5E5E5;
+}
+
+.logo{
+    width: 31.09px;
+    height: 46.37px;
+    margin-top: 73.42px;
+    margin-left: 40px;
+}
+
+.sice{
+    font-size: 32px;
+}
+
+p{
+    color: #495057;
+    font-size: 12px;
+}
+
+.icon-info{
+    background-color: #495057;
+    color: #fff;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.fondo{
+    background-color: #fff;
+}
+
+.ocultarImagen{
+    display: none !important;
+}
+
+.copiar{
+    position: absolute;
+    bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #6c757d;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 10px;
+    margin-left: -100px;
+    
+    
+}
+
+.copiar:hover{
+    background-color: #6c757d;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .image{
+        display:none !important;
+    }
+    .copiar{
+        position: relative;
+        margin-left: 0;
+    }
+  }
