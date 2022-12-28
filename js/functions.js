@@ -43,6 +43,9 @@ function encriptar() {
         resultado.textContent = textoFinal;
         copiar.removeAttribute('hidden');
     }    
+    if ( textoInicial.trim() == '' ) {
+        window.location.reload();
+    }
 }
 
 function desencriptar() {
@@ -55,6 +58,9 @@ function desencriptar() {
         resultado.textContent = textoFinal;
         copiar.removeAttribute('hidden');
     }    
+    if ( textoInicial.trim() == '' ) {
+        window.location.reload();
+    }
 }
 
 copiar.addEventListener('click', ()=>{
