@@ -13,9 +13,14 @@ body{
     font-size: 32px;
 }
 
-p{
+p{  height: 2.5em;
+    padding: 5px;
     color: #495057;
     font-size: 12px;
+}
+
+.error{
+    background-color: rgba(17, 0, 255, 0.342);
 }
 
 .icon-info{
