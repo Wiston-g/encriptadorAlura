@@ -37,30 +37,30 @@ function encriptar() {
     textoFinal = '';
     let textoInicial = texto.value.toLowerCase();
     let acento = verAcentos( textoInicial );
+    if ( textoInicial.trim() == '' ) {
+        window.location.reload();
+    }
     if ( textoInicial != ''  &&  acento != true ) {
         textoFinal = encriptacion( textoInicial );
         imagen.classList.add( "ocultarImagen" );
         resultado.textContent = textoFinal;
         copiar.removeAttribute('hidden');
     }    
-    if ( textoInicial.trim() == '' ) {
-        window.location.reload();
-    }
 }
 
 function desencriptar() {
     textoFinal = '';
     let textoInicial = texto.value.toLowerCase();
     let acento = verAcentos( textoInicial );
+    if ( textoInicial.trim() == '' ) {
+        window.location.reload();
+    }
     if ( textoInicial != ''  &&  acento != true ) {
         textoFinal = desencriptacion( textoInicial );
         imagen.classList.add( "ocultarImagen" );
         resultado.textContent = textoFinal;
         copiar.removeAttribute('hidden');
     }    
-    if ( textoInicial.trim() == '' ) {
-        window.location.reload();
-    }
 }
 
 copiar.addEventListener('click', ()=>{
